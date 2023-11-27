@@ -1,0 +1,117 @@
+@media (max-width: 1230px) {
+    .nav-list {
+        display: none;
+    }
+
+    .nav-button {
+        display: block;
+        position: fixed;
+        z-index: 7;
+        top: 46px;
+        right: 30px;
+        background:none;
+        border: none;
+    }
+
+    .nav.open .nav-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 1;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        font-size: 34px;
+        font-weight: 600px;
+    }
+
+    .nav-link {
+        color: #828282;
+    }
+
+    .nav-link.active {
+        color: #090909;
+    }
+
+    .header-nav {
+        margin-bottom: 53px;
+    }
+
+    .header-row {
+        flex-direction: column;
+        row-gap: 20px
+    }
+
+    .header-content {
+        margin-top: 0;
+    }
+
+    .header-img {
+        text-align: center;
+    }
+
+    .project-img{
+        max-width: 800px;  /* сюда я добавил макс видс и видс 100% чтобы картинка сужалась автоматически при разных размеров экрана */
+        width: 100%;
+    }
+
+    .no-scroll{
+        overflow-y: hidden; /* я добавил ноу скролл так как когда заходишь в меньюшку то ты все равно можешь листать мышкой что не обязательно + добавил в джаваскрипт немного дополнительного кода */
+    }
+}
+
+@media (max-width: 700px) {
+    .header-heading {
+        font-size: 34px;
+    }
+
+    .header-heading span {
+        font-size: 28px;
+    }
+
+    .services {
+        padding: 60px 0;
+    }
+
+    .portfolio {
+        padding: 60px 0;
+    }
+
+    .portfolio-title {
+        margin-bottom: 50px;
+    }
+
+    .project-img {
+        margin-bottom: 30px;
+    }
+
+    .project + .project {
+        margin-bottom: 50px;
+    }
+
+    .contacts {
+        padding: 60px 0;
+    }
+
+    .contacts-title {
+        margin-bottom: 20px;
+    }
+
+    .contacts-content {
+        margin-bottom: 20px;
+    }
+
+    .contacts-button {
+        margin-bottom: 70px;
+    }
+
+    .contacts-social {
+        column-gap: 60px;
+        margin-bottom: 20px;
+    }
+}
